@@ -33,4 +33,4 @@ Technologies Used
 
 <br>
 
-<img width="1318" height="573" alt="project1" src="https://github.com/user-attachments/assets/b2f2d0f8-14e5-4cd5-b683-6adabdf8aeff" />
+<img width="1318" height="573" alt="repo1" src="https://github.com/user-attachments/assets/aa7fb611-0a14-4dd9-af88-2206ad7d2b74" />
