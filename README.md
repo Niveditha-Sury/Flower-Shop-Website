@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # 🌸 Blossoms & Pots — Responsive E-Commerce Flower Shop
 
 A premium, modern, and fully responsive e-commerce storefront for a boutique plant and flower shop. Designed with a vibrant, warm aesthetic featuring sleek micro-animations, cohesive color palettes, and fluid layouts for an outstanding desktop and mobile user experience.
