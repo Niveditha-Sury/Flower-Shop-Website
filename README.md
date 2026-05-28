@@ -1,36 +1,98 @@
-<h2>Responsive E-Commerce Flower Shop Website</h2>
+# 🌸 Blossoms & Pots — Responsive E-Commerce Flower Shop
 
-<p>This project is a modern, responsive e-commerce website designed for a flower shop. It showcases fresh flowers and unique flower pots, providing a seamless browsing experience across various devices.</p>
+A premium, modern, and fully responsive e-commerce storefront for a boutique plant and flower shop. Designed with a vibrant, warm aesthetic featuring sleek micro-animations, cohesive color palettes, and fluid layouts for an outstanding desktop and mobile user experience.
 
-<h2>Features</h2>
+![Blossoms & Pots Banner](https://github.com/user-attachments/assets/aa7fb611-0a14-4dd9-af88-2206ad7d2b74)
 
-<ul>
-<li>Responsive Header: A sticky navigation bar that adapts to different screen sizes, featuring a logo, navigation links, and user icons (heart, shopping cart, user). On smaller screens, the navigation transforms into a collapsible dropdown menu.</li>
-  
-<li>Home Section: An inviting hero section with a captivating background image, a compelling headline, and a call-to-action button.</li>
+---
 
-<li>About Section: Provides information about the shop, including a video showcase and a detailed explanation of why customers should choose them.</li>
+## ✨ Features
 
-<li>Icon Section: Highlights key services like free delivery, 10-day return policy, offers & gifts, and secure payment options.</li>
+- **📱 Fully Responsive Navigation**:
+  - Sticky header that anchors cleanly across all devices.
+  - Automatically transitions to a mobile navigation drawer below `991px`.
+  - Hamburger menu icon smoothly morphs into a close ("X") icon when opened.
+  - **Auto-Close UX**: Dropdown menu automatically collapses when any navigation link is clicked, allowing seamless single-page scrolling.
+- **🌸 Inviting Hero Section**: Captivating fullscreen introduction highlighting fresh, natural flowers with call-to-action buttons.
+- **🎥 Interactive About Portal**: Engaging "Why Choose Us" row featuring handcrafted pot features and a background video container.
+- **🚚 Trust Metrics Grid**: Showcases core customer-centric values like free delivery, return policies, special offers, and secure payment processing.
+- **🛒 Polished Product Grid**:
+  - Features 12 unique products with interactive hover overlay cards.
+  - Image hover-zoom effects for premium shopping feel.
+  - **Physical Sticker Badges**: Highly visible, modern discount tags (`-10%`, `-15%`) styled with deep drop-shadows and vibrant coral coloring.
+- **⭐ Customer Testimonials**: Clean review cards with 5-star FontAwesome ratings and user-specific quotes.
+- **✉️ Contact & Support**: Elegant messaging form accompanied by localized visuals.
+- **🗺️ Comprehensive Footer**: Quick navigation access, extra account links, address locations, and trust badges.
 
-<li>Products Section: Displays a variety of flower pots with discounts, images, and interactive icons for adding to cart, liking, and sharing.</li>
+---
 
-<li>Review Section: Features customer testimonials with star ratings, providing social proof for the shop's quality.</li>
+## 🎨 Design System & Color Palette
 
-<li>Contact Section: A form for users to get in touch, accompanied by a relevant image.</li>
+The user interface uses a curated, cohesive warm HSL color palette tailored to nature and floral aesthetics:
 
-<li>Footer: Contains quick links, extra links, location information, contact details, and payment method images.</li>
+| Role | Color | Hex Code | Usage |
+| :--- | :--- | :--- | :--- |
+| **Primary Base** | Light Peach / Pink | `#ffc1b4` | Header Background, Card Highlights, Form Containers |
+| **Primary Accent** | Coral Red | `#f38c79` | Buttons, Brand Logo, Headings, Discount Stickers |
+| **Secondary Accent**| Deep Teal | `#034c53` | Hover Highlight States, High-contrast Icons, Checked states |
+| **Text Primary** | Forest Green | `#61836b` | Desktop Nav Links, Footer Links |
+| **Background Secondary** | Dusty Rose | `#d4bebe` | Page Icons Section, Product Card Background |
 
-</ul>
+---
 
-Technologies Used
+## ⚡ Micro-Animations & UX Features
 
-<ul>
-<li>HTML5: For the core structure and content of the web pages.</li>
-<li>CSS: For styling and layout, including responsive design using media queries.</li>
-<li>Font Awesome: For scalable vector icons used throughout the website.</li>
-</ul>
+- **Icon Rotation & Scale**: Hovering over header icons or buttons gently scales them up and transitions the color scheme.
+- **Menu Sliding Indicator**: Mobile navbar links slide slightly to the right (`padding-left: 2.5rem`) on hover with color-fills for intuitive tap feedback.
+- **Product Zoom**: Product cards scale images to `1.1x` smoothly on hover.
+- **Close Icon Transition**: Checkbox-controlled hamburger icon switches content unicode dynamically without bloated JavaScript libraries.
 
-<br>
+---
 
-<img width="1318" height="573" alt="repo1" src="https://github.com/user-attachments/assets/aa7fb611-0a14-4dd9-af88-2206ad7d2b74" />
+## 📂 Project Structure
+
+```text
+Flower-Shop-Website/
+├── index.html            # Main markup page with modern layout & auto-close script
+├── styles.css            # Base stylesheet containing the core design system & grid layout
+├── mediaqueries.css      # Fluid breakpoints defining tablet and mobile viewport overrides
+├── README.md             # Project documentation (this file)
+└── images/               # Local assets directory (icons, product photos, cover image)
+```
+
+---
+
+## 🚀 Run & Preview Locally
+
+To launch a development server and view the responsive behaviors locally:
+
+### Option A: Using NPM (Recommended)
+1. Serve the folder using `npx http-server`:
+   ```bash
+   npx http-server -p 8000
+   ```
+2. Open your browser and navigate to **[http://localhost:8000](http://localhost:8000)**.
+
+### Option B: Using Python
+1. Serve using Python's built-in HTTP server:
+   ```bash
+   python -m http.server 8000
+   ```
+2. Open **[http://localhost:8000](http://localhost:8000)**.
+
+### Option C: File System Direct Launch
+- Simply double-click `index.html` inside the root folder to view it directly in your browser.
+
+---
+
+## 📏 Responsive Breakpoints Reference
+
+The stylesheet separates styling concerns across 3 fluid layout tiers:
+
+- **Desktop (`> 991px`)**: Full flex row header, standard spacing, hover transitions.
+- **Tablet (`<= 991px`)**: Fixed `6rem` height header, hidden inline menu, collapsible navigation drawer, centered hamburger/logo layout.
+- **Mobile (`<= 450px`)**: Compact `5.5rem` height header, reduced brand fonts (`1.8rem`), smaller icon gutters, and scaled headings to match portrait screens.
+
+---
+
+*Created by **Niveditha Sury** | All rights reserved.*

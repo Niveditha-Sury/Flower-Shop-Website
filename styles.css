@@ -19,7 +19,11 @@
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
-    scroll-padding-top: 6rem;
+    scroll-padding-top: 7rem;
+    overflow-x: hidden;
+}
+
+body{
     overflow-x: hidden;
 }
 
@@ -62,19 +66,21 @@ header{
     top: 0;
     left: 0;
     right: 0;
+    height: 7rem;
     background: #ffc1b4;
-    padding: 2rem 4%;
+    padding: 0 4%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     z-index: 1000;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .05);
 }
 
 header .logo{
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #f38c79;
     font-weight: bolder;
+    white-space: nowrap;
 }
 
 header .logo span{
@@ -82,7 +88,7 @@ header .logo span{
 }
 
 header .navbar a{
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding: 0 1.5rem;
     color: #61836b;
 }
@@ -92,13 +98,13 @@ header .navbar a:hover{
 }
 
 header .icons a{
-    font-size: 2.5rem;
-    color: #F38c79;
+    font-size: 2.2rem;
+    color: var(--teal);
     margin-left: 1.5rem;
 }
 
 header .icons a:hover{
-    color: var(--teal);
+    color: #f38c79;
 }
 
 header #toggler{
@@ -106,12 +112,9 @@ header #toggler{
 }
 
 header .fa-bars{
-    font-size: 3rem;
-    color: #f38c79;
-    border-radius: .5rem;
-    padding:.5rem 1.5rem;
+    font-size: 2.5rem;
+    color: var(--teal);
     cursor: pointer;
-    border: .1rem solid rgba(0, 0, 0, .3);
     display: none;
 }
 
@@ -261,14 +264,17 @@ color: #f38c79;
 
 .products .box-container .box .discount{
     position: absolute;
-    top: 1rem;
-    left: 1rem;
-    padding: .7rem 1rem;
-    font-size: 2rem;
-    color: var(--teal);
-    background: rgba(255, 51, 153, .05);
-    z-index: 1;
+    top: 1.5rem;
+    left: 1.5rem;
+    padding: .6rem 1.2rem;
+    font-size: 1.4rem;
+    color: #fff;
+    background: #f38c79;
+    z-index: 10;
     border-radius: .5rem;
+    font-weight: 600;
+    box-shadow: 0 .4rem .8rem rgba(0, 0, 0, 0.15);
+    letter-spacing: .05rem;
 }
 
 .products .box-container .box .image{

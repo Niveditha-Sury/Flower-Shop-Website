@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive E-Commerce Flower Shop Website</title>
+    <title>🌸 Blossoms & Pots</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="styles.css"/>
     <link rel="stylesheet" href="mediaqueries.css"/>
@@ -14,7 +14,7 @@
         <input type="checkbox" name="" id="toggler"/>
         <label for="toggler" class="fas fa-bars"></label>
 
-        <a href="#" class="logo">Flower<span>.</span></a>
+        <a href="#" class="logo">Blossoms <span>&</span>  Pots</a>
 
         <nav class="navbar">
             <a href="#home">Home</a>
@@ -115,7 +115,7 @@
     <!--1st product-->
 
     <div class="box">
-    <span class="discount">--10%</span>
+    <span class="discount">-10%</span>
     <div class="image">
         <img src="./images/pic1.jpg" alt="">
         <div class="icons">
@@ -132,7 +132,7 @@
 
     <!--2nd product-->
     <div class="box">
-    <span class="discount">--15%</span>
+    <span class="discount">-15%</span>
     <div class="image">
         <img src="./images/pic2.jpg" alt="">
         <div class="icons">
@@ -149,7 +149,7 @@
 
     <!--3rd product-->
     <div class="box">
-    <span class="discount">--5%</span>
+    <span class="discount">-5%</span>
     <div class="image">
         <img src="./images/pic3.jpg" alt="">
         <div class="icons">
@@ -166,7 +166,7 @@
 
     <!--4th product-->
     <div class="box">
-    <span class="discount">--20%</span>
+    <span class="discount">-20%</span>
     <div class="image">
         <img src="./images/pic4.jpg" alt="">
         <div class="icons">
@@ -183,7 +183,7 @@
 
     <!--5th product-->
     <div class="box">
-    <span class="discount">--25%</span>
+    <span class="discount">-25%</span>
     <div class="image">
         <img src="./images/pic5 (2).jpg" alt="">
         <div class="icons">
@@ -200,7 +200,7 @@
 
     <!--6th product-->
     <div class="box">
-    <span class="discount">--6%</span>
+    <span class="discount">-6%</span>
     <div class="image">
         <img src="./images/pic6.jpg" alt="">
         <div class="icons">
@@ -218,7 +218,7 @@
 
     <!--7th product-->
     <div class="box">
-    <span class="discount">--10%</span>
+    <span class="discount">-10%</span>
     <div class="image">
         <img src="./images/pic7.jpg" alt="">
         <div class="icons">
@@ -235,7 +235,7 @@
 
     <!--8th product-->
     <div class="box">
-    <span class="discount">--30%</span>
+    <span class="discount">-30%</span>
     <div class="image">
         <img src="./images/pic8.jpg" alt="">
         <div class="icons">
@@ -252,7 +252,7 @@
 
     <!--9th product-->
     <div class="box">
-    <span class="discount">--3%</span>
+    <span class="discount">-3%</span>
     <div class="image">
         <img src="./images/pic9.jpg" alt="">
         <div class="icons">
@@ -266,7 +266,59 @@
         <div class="price">₹388  <span> ₹400 </span></div>
       </div>
     </div>
- </div>
+
+    <!--10th product-->
+    <div class="box">
+    <span class="discount">-3%</span>
+    <div class="image">
+        <img src="./images/pic10.jpg" alt="">
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="cart-btn">Add to Cart</a>
+            <a href="#" class="fas fa-share"></a>
+        </div>
+    </div>
+      <div class="content">
+        <h3>Flower Pot</h3>
+        <div class="price">₹400  <span> ₹430 </span></div>
+      </div>
+    </div>
+
+    <!--11th product-->
+    <div class="box">
+    <span class="discount">-3%</span>
+    <div class="image">
+        <img src="./images/pic11.jpg" alt="">
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="cart-btn">Add to Cart</a>
+            <a href="#" class="fas fa-share"></a>
+        </div>
+    </div>
+      <div class="content">
+        <h3>Flower Pot</h3>
+        <div class="price">₹388  <span> ₹400 </span></div>
+      </div>
+    </div>
+
+    <!--12th product-->
+    <div class="box">
+    <span class="discount">-3%</span>
+    <div class="image">
+        <img src="./images/pic12.jpg" alt="">
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="cart-btn">Add to Cart</a>
+            <a href="#" class="fas fa-share"></a>
+        </div>
+    </div>
+      <div class="content">
+        <h3>Flower Pot</h3>
+        <div class="price">₹430  <span> ₹460 </span></div>
+      </div>
+    </div>
+    
+</div>
 </section>
 
 <!--Product Section Ends -->
@@ -414,5 +466,16 @@
 
 <!--Footer Section Ends-->
 
+    <script>
+        // Automatically close the mobile navigation menu when a link is clicked
+        document.querySelectorAll('.navbar a').forEach(link => {
+            link.addEventListener('click', () => {
+                const toggler = document.getElementById('toggler');
+                if (toggler) {
+                    toggler.checked = false;
+                }
+            });
+        });
+    </script>
 </body>
 </html>
